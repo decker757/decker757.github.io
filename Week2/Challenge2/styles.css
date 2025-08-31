@@ -1,0 +1,93 @@
+/* styles.css - Challenge #2 (Skeleton: Rides Gallery) */
+
+
+/* 0) Base page */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+/* 1) Container */
+.container{
+    display:flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+/* 2) Section heading */
+.site-header h1{
+    text-align: left;
+}
+.attractions{
+    text-align: center;;
+}
+/* 3) Cards wrapper (center all cards horizontally) */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1600px;
+    margin: 30px auto;
+}
+
+/* 4) Card (size, spacing, border, rounded corners) */
+.card{
+    border: 2px solid grey;
+    border-radius: 20px;
+    height: 250px;
+    width: 200px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 2px;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(-5deg); }
+    30% { transform: rotate(5deg); }
+    45% { transform: rotate(-5deg); }
+    60% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.card:hover{
+    border-color: red;
+    animation: wiggle 0.4s;
+}
+
+/* 5) Card text (h3 title, paragraph blurb) */
+.card h3{
+    text-align: left;
+    margin-left: 10px;
+    background-color: white;
+    font-size: smaller;
+}
+
+.blurb{
+    margin-left:10px;
+    text-align: left;
+    background-color: white;
+    font-size: 12px;
+}
+
+/* 6) Card image (fit within card, centered) */
+.card img{
+    object-fit: cover;
+    height:150px;
+    width:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* 7) Hover state: change border to green, then make it wigglew */
+
+
+/* 8) Footer */
+.site-footer{
+    text-align: center;
+    margin-top: 20px;
+    color:grey;
+}
